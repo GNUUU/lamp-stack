@@ -6,5 +6,5 @@
 file "/root/myfile" do
 
 	action :create
-	content "salut test"
+	content "salut testss"
 end
