@@ -10,12 +10,11 @@ file "/root/myfile" do
 end
 
 
-execute "update" do
-  command "apt-get update"
-  action :run
-end
+#execute "update" do
+  # command "apt-get update"
+  # action :run
+# end
 
-execute	"remove-apache" do
-	command "apt-get remove apache2"
-	action	:run
+package	"apache2" do
+	action	:remove
 end
